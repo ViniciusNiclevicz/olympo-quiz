@@ -1,0 +1,1888 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quando surge um problema inesperado, você geralmente:",
+      "options": {
+        "A": {
+          "text": "Analisa cuidadosamente antes de agir",
+          "positive_weights": {
+            "sabedoria": 3,
+            "autocontrole": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Age rapidamente e improvisa",
+          "positive_weights": {
+            "coragem": 2,
+            "adaptabilidade": 3,
+            "aventura": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Busca ajuda de outras pessoas",
+          "positive_weights": {
+            "empatia": 2,
+            "carisma": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Segue sua intuição",
+          "positive_weights": {
+            "intuicao": 3,
+            "espiritualidade": 1,
+            "criatividade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 2,
+      "question": "Em uma situação de risco você:",
+      "options": {
+        "A": {
+          "text": "Assume a liderança",
+          "positive_weights": {
+            "lideranca": 3,
+            "coragem": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Protege as pessoas próximas",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Resolve sozinho",
+          "positive_weights": {
+            "independencia": 3,
+            "persistencia": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Mantém a calma e avalia",
+          "positive_weights": {
+            "autocontrole": 3,
+            "sabedoria": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 3,
+      "question": "O que você valoriza mais?",
+      "options": {
+        "A": {
+          "text": "Conhecimento",
+          "positive_weights": {
+            "conhecimento": 3,
+            "sabedoria": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Liberdade",
+          "positive_weights": {
+            "independencia": 3,
+            "aventura": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Justiça",
+          "positive_weights": {
+            "justica": 3,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Vitória",
+          "positive_weights": {
+            "competitividade": 3,
+            "ambicao": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 4,
+      "question": "Quando você falha em algo:",
+      "options": {
+        "A": {
+          "text": "Estuda o erro",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Tenta novamente imediatamente",
+          "positive_weights": {
+            "persistencia": 3,
+            "coragem": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Busca outra estratégia",
+          "positive_weights": {
+            "criatividade": 2,
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Aceita e segue em frente",
+          "positive_weights": {
+            "autocontrole": 2,
+            "intuicao": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 5,
+      "question": "Você gostaria de ser reconhecido por:",
+      "options": {
+        "A": {
+          "text": "Inteligência",
+          "positive_weights": {
+            "sabedoria": 3,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Coragem",
+          "positive_weights": {
+            "coragem": 3,
+            "persistencia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Criatividade",
+          "positive_weights": {
+            "criatividade": 3,
+            "expressividade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Carisma",
+          "positive_weights": {
+            "carisma": 3,
+            "lideranca": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 6,
+      "question": "Ao entrar em um lugar desconhecido você:",
+      "options": {
+        "A": {
+          "text": "Explora tudo",
+          "positive_weights": {
+            "aventura": 3,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Observa cuidadosamente",
+          "positive_weights": {
+            "sabedoria": 2,
+            "autocontrole": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Conversa com as pessoas",
+          "positive_weights": {
+            "carisma": 3,
+            "empatia": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Procura recursos úteis",
+          "positive_weights": {
+            "conhecimento": 2,
+            "criatividade": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 7,
+      "question": "O que mais te incomoda?",
+      "options": {
+        "A": {
+          "text": "Injustiça",
+          "positive_weights": {
+            "justica": 3,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Traição",
+          "positive_weights": {
+            "lealdade": 3,
+            "persistencia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Limitações",
+          "positive_weights": {
+            "ambicao": 2,
+            "independencia": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Ignorância",
+          "positive_weights": {
+            "conhecimento": 3,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 8,
+      "question": "Qual habilidade você escolheria?",
+      "options": {
+        "A": {
+          "text": "Ler qualquer livro instantaneamente",
+          "positive_weights": {
+            "conhecimento": 3,
+            "sabedoria": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Nunca sentir medo",
+          "positive_weights": {
+            "coragem": 3,
+            "persistencia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Convencer qualquer pessoa",
+          "positive_weights": {
+            "carisma": 3,
+            "lideranca": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Encontrar qualquer caminho",
+          "positive_weights": {
+            "aventura": 2,
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 9,
+      "question": "Em uma equipe você normalmente:",
+      "options": {
+        "A": {
+          "text": "Planeja",
+          "positive_weights": {
+            "sabedoria": 3,
+            "disciplina": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Motiva",
+          "positive_weights": {
+            "lideranca": 2,
+            "carisma": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Executa",
+          "positive_weights": {
+            "persistencia": 3,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Adapta o plano",
+          "positive_weights": {
+            "adaptabilidade": 3,
+            "criatividade": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 10,
+      "question": "Qual destes defeitos mais se aproxima de você?",
+      "options": {
+        "A": {
+          "text": "Orgulho",
+          "positive_weights": {
+            "lideranca": 1,
+            "ambicao": 2
+          },
+          "negative_weights": {
+            "empatia": -1
+          }
+        },
+        "B": {
+          "text": "Impulsividade",
+          "positive_weights": {
+            "coragem": 2,
+            "aventura": 2
+          },
+          "negative_weights": {
+            "autocontrole": -2
+          }
+        },
+        "C": {
+          "text": "Teimosia",
+          "positive_weights": {
+            "persistencia": 2
+          },
+          "negative_weights": {
+            "adaptabilidade": -2
+          }
+        },
+        "D": {
+          "text": "Distanciamento emocional",
+          "positive_weights": {
+            "autocontrole": 2,
+            "independencia": 2
+          },
+          "negative_weights": {
+            "empatia": -2
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "question": "O que você mais valoriza em uma amizade?",
+      "options": {
+        "A": {
+          "text": "Lealdade",
+          "positive_weights": {
+            "lealdade": 3,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Diversão",
+          "positive_weights": {
+            "expressividade": 2,
+            "carisma": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Honestidade",
+          "positive_weights": {
+            "justica": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Apoio mútuo",
+          "positive_weights": {
+            "empatia": 3,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 12,
+      "question": "Você prefere:",
+      "options": {
+        "A": {
+          "text": "Poucos amigos próximos",
+          "positive_weights": {
+            "lealdade": 2,
+            "independencia": 1
+          },
+          "negative_weights": {
+            "carisma": -1
+          }
+        },
+        "B": {
+          "text": "Muitos conhecidos",
+          "positive_weights": {
+            "carisma": 3,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Liderar um grupo",
+          "positive_weights": {
+            "lideranca": 3,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Ficar sozinho",
+          "positive_weights": {
+            "independencia": 3,
+            "autocontrole": 1
+          },
+          "negative_weights": {
+            "carisma": -1
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "question": "Quando alguém discorda de você:",
+      "options": {
+        "A": {
+          "text": "Debate racionalmente",
+          "positive_weights": {
+            "sabedoria": 2,
+            "justica": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Ignora",
+          "positive_weights": {
+            "autocontrole": 1
+          },
+          "negative_weights": {
+            "empatia": -1
+          }
+        },
+        "C": {
+          "text": "Tenta convencer",
+          "positive_weights": {
+            "lideranca": 2,
+            "carisma": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Escuta primeiro",
+          "positive_weights": {
+            "empatia": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 14,
+      "question": "Num conflito entre amigos:",
+      "options": {
+        "A": {
+          "text": "Media a situação",
+          "positive_weights": {
+            "justica": 2,
+            "empatia": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Escolhe um lado",
+          "positive_weights": {
+            "lealdade": 2,
+            "coragem": 1
+          },
+          "negative_weights": {
+            "justica": -1
+          }
+        },
+        "C": {
+          "text": "Evita se envolver",
+          "positive_weights": {
+            "autocontrole": 1
+          },
+          "negative_weights": {
+            "lideranca": -1
+          }
+        },
+        "D": {
+          "text": "Analisa os fatos",
+          "positive_weights": {
+            "sabedoria": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 15,
+      "question": "Você se considera mais:",
+      "options": {
+        "A": {
+          "text": "Reservado",
+          "positive_weights": {
+            "independencia": 2,
+            "autocontrole": 1
+          },
+          "negative_weights": {
+            "expressividade": -1
+          }
+        },
+        "B": {
+          "text": "Extrovertido",
+          "positive_weights": {
+            "carisma": 3,
+            "expressividade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Observador",
+          "positive_weights": {
+            "sabedoria": 2,
+            "intuicao": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Expressivo",
+          "positive_weights": {
+            "expressividade": 3,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 16,
+      "question": "As pessoas costumam dizer que você é:",
+      "options": {
+        "A": {
+          "text": "Inteligente",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Leal",
+          "positive_weights": {
+            "lealdade": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Carismático",
+          "positive_weights": {
+            "carisma": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Determinado",
+          "positive_weights": {
+            "persistencia": 2,
+            "ambicao": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 17,
+      "question": "O que mais te magoa?",
+      "options": {
+        "A": {
+          "text": "Injustiça",
+          "positive_weights": {
+            "justica": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Rejeição",
+          "positive_weights": {
+            "empatia": 2
+          },
+          "negative_weights": {
+            "autocontrole": -1
+          }
+        },
+        "C": {
+          "text": "Mentira",
+          "positive_weights": {
+            "lealdade": 2,
+            "justica": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Desrespeito",
+          "positive_weights": {
+            "coragem": 1,
+            "lideranca": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 18,
+      "question": "Você prefere trabalhar:",
+      "options": {
+        "A": {
+          "text": "Sozinho",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {
+            "carisma": -1
+          }
+        },
+        "B": {
+          "text": "Em dupla",
+          "positive_weights": {
+            "lealdade": 2,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Em equipe",
+          "positive_weights": {
+            "lideranca": 1,
+            "carisma": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Depende da situação",
+          "positive_weights": {
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 19,
+      "question": "Em uma discussão você costuma usar:",
+      "options": {
+        "A": {
+          "text": "Lógica",
+          "positive_weights": {
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Emoções",
+          "positive_weights": {
+            "expressividade": 2,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Experiência",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Evita discutir",
+          "positive_weights": {
+            "autocontrole": 2
+          },
+          "negative_weights": {
+            "lideranca": -1
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "question": "Qual dessas qualidades você mais admira?",
+      "options": {
+        "A": {
+          "text": "Disciplina",
+          "positive_weights": {
+            "disciplina": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Coragem",
+          "positive_weights": {
+            "coragem": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Empatia",
+          "positive_weights": {
+            "empatia": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Independência",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 21,
+      "question": "O que mais te motiva?",
+      "options": {
+        "A": {
+          "text": "Aprender coisas novas",
+          "positive_weights": {
+            "conhecimento": 3,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Superar desafios",
+          "positive_weights": {
+            "competitividade": 2,
+            "coragem": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Explorar o desconhecido",
+          "positive_weights": {
+            "aventura": 3,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Criar algo marcante",
+          "positive_weights": {
+            "criatividade": 3,
+            "ambicao": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 22,
+      "question": "Você prefere conquistar:",
+      "options": {
+        "A": {
+          "text": "Respeito",
+          "positive_weights": {
+            "lideranca": 2,
+            "justica": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Poder",
+          "positive_weights": {
+            "ambicao": 3,
+            "competitividade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Conhecimento",
+          "positive_weights": {
+            "conhecimento": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Liberdade",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 23,
+      "question": "Seu sonho ideal envolve:",
+      "options": {
+        "A": {
+          "text": "Descobertas",
+          "positive_weights": {
+            "conhecimento": 2,
+            "aventura": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Liderar pessoas",
+          "positive_weights": {
+            "lideranca": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Arte e criação",
+          "positive_weights": {
+            "criatividade": 3,
+            "expressividade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Explorar o mundo",
+          "positive_weights": {
+            "aventura": 3,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 24,
+      "question": "Quando algo demora mais do que deveria:",
+      "options": {
+        "A": {
+          "text": "Persiste até conseguir",
+          "positive_weights": {
+            "persistencia": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Perde o interesse",
+          "positive_weights": {},
+          "negative_weights": {
+            "persistencia": -2
+          }
+        },
+        "C": {
+          "text": "Procura outra estratégia",
+          "positive_weights": {
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Pede ajuda",
+          "positive_weights": {
+            "empatia": 1,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 25,
+      "question": "Você arriscaria tudo por:",
+      "options": {
+        "A": {
+          "text": "Família",
+          "positive_weights": {
+            "lealdade": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Justiça",
+          "positive_weights": {
+            "justica": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Seu objetivo",
+          "positive_weights": {
+            "ambicao": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Amigos",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 26,
+      "question": "Você prefere:",
+      "options": {
+        "A": {
+          "text": "Planejamento",
+          "positive_weights": {
+            "disciplina": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Espontaneidade",
+          "positive_weights": {
+            "adaptabilidade": 2,
+            "aventura": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Competição",
+          "positive_weights": {
+            "competitividade": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Harmonia",
+          "positive_weights": {
+            "empatia": 2,
+            "justica": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 27,
+      "question": "O que define sucesso para você?",
+      "options": {
+        "A": {
+          "text": "Ser feliz",
+          "positive_weights": {
+            "expressividade": 1,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Alcançar seus objetivos",
+          "positive_weights": {
+            "ambicao": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Deixar um legado",
+          "positive_weights": {
+            "lideranca": 1,
+            "persistencia": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Ser livre",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 28,
+      "question": "Você costuma:",
+      "options": {
+        "A": {
+          "text": "Pensar no futuro",
+          "positive_weights": {
+            "sabedoria": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Viver o presente",
+          "positive_weights": {
+            "aventura": 2,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Refletir sobre o passado",
+          "positive_weights": {
+            "intuicao": 2,
+            "conhecimento": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Equilibrar tudo",
+          "positive_weights": {
+            "autocontrole": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 29,
+      "question": "Seu maior medo seria:",
+      "options": {
+        "A": {
+          "text": "Fracassar",
+          "positive_weights": {
+            "ambicao": 2,
+            "persistencia": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Ser esquecido",
+          "positive_weights": {
+            "lideranca": 1,
+            "expressividade": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Perder sua liberdade",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Perder quem ama",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 30,
+      "question": "Você é mais guiado por:",
+      "options": {
+        "A": {
+          "text": "Razão",
+          "positive_weights": {
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Emoção",
+          "positive_weights": {
+            "expressividade": 2,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Instinto",
+          "positive_weights": {
+            "intuicao": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Experiência",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 31,
+      "question": "Você confia mais em:",
+      "options": {
+        "A": {
+          "text": "Fatos e evidências",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Sua intuição",
+          "positive_weights": {
+            "intuicao": 3,
+            "espiritualidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Experiência pessoal",
+          "positive_weights": {
+            "conhecimento": 2,
+            "autocontrole": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Conselhos de pessoas próximas",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 32,
+      "question": "Quando está sozinho você normalmente:",
+      "options": {
+        "A": {
+          "text": "Reflete sobre a vida",
+          "positive_weights": {
+            "intuicao": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Planeja o futuro",
+          "positive_weights": {
+            "disciplina": 2,
+            "ambicao": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Cria ou imagina coisas",
+          "positive_weights": {
+            "criatividade": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Busca distrações",
+          "positive_weights": {
+            "adaptabilidade": 1
+          },
+          "negative_weights": {
+            "autocontrole": -1
+          }
+        }
+      }
+    },
+    {
+      "id": 33,
+      "question": "Você acredita que:",
+      "options": {
+        "A": {
+          "text": "Tudo pode ser explicado",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {
+            "espiritualidade": -1
+          }
+        },
+        "B": {
+          "text": "Existem mistérios além da compreensão",
+          "positive_weights": {
+            "espiritualidade": 3,
+            "intuicao": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "O destino influencia a vida",
+          "positive_weights": {
+            "espiritualidade": 2,
+            "intuicao": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Criamos nosso próprio caminho",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 34,
+      "question": "Quando está sob pressão:",
+      "options": {
+        "A": {
+          "text": "Mantém a calma",
+          "positive_weights": {
+            "autocontrole": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Age rapidamente",
+          "positive_weights": {
+            "coragem": 2,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Busca apoio",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Analisa todas as possibilidades",
+          "positive_weights": {
+            "sabedoria": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 35,
+      "question": "Qual destas frases mais combina com você?",
+      "options": {
+        "A": {
+          "text": "Conhecimento é poder",
+          "positive_weights": {
+            "conhecimento": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "A vida é uma aventura",
+          "positive_weights": {
+            "aventura": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Tudo tem um significado",
+          "positive_weights": {
+            "espiritualidade": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "As pessoas vêm em primeiro lugar",
+          "positive_weights": {
+            "empatia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 36,
+      "question": "Você costuma esconder suas emoções?",
+      "options": {
+        "A": {
+          "text": "Quase sempre",
+          "positive_weights": {
+            "autocontrole": 2,
+            "independencia": 1
+          },
+          "negative_weights": {
+            "expressividade": -2
+          }
+        },
+        "B": {
+          "text": "Às vezes",
+          "positive_weights": {
+            "autocontrole": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Raramente",
+          "positive_weights": {
+            "expressividade": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Nunca",
+          "positive_weights": {
+            "expressividade": 3
+          },
+          "negative_weights": {
+            "autocontrole": -1
+          }
+        }
+      }
+    },
+    {
+      "id": 37,
+      "question": "O que mais desperta sua curiosidade?",
+      "options": {
+        "A": {
+          "text": "Ciência e conhecimento",
+          "positive_weights": {
+            "conhecimento": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Mistérios e sobrenatural",
+          "positive_weights": {
+            "espiritualidade": 2,
+            "intuicao": 2
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Pessoas e relacionamentos",
+          "positive_weights": {
+            "empatia": 2,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Novos lugares",
+          "positive_weights": {
+            "aventura": 2,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 38,
+      "question": "Quando toma uma decisão importante:",
+      "options": {
+        "A": {
+          "text": "Usa lógica",
+          "positive_weights": {
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Segue o coração",
+          "positive_weights": {
+            "empatia": 2,
+            "expressividade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Segue o instinto",
+          "positive_weights": {
+            "intuicao": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Analisa riscos e ganhos",
+          "positive_weights": {
+            "ambicao": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 39,
+      "question": "Você se considera uma pessoa:",
+      "options": {
+        "A": {
+          "text": "Prática",
+          "positive_weights": {
+            "disciplina": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Sonhadora",
+          "positive_weights": {
+            "criatividade": 2,
+            "espiritualidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Determinado",
+          "positive_weights": {
+            "persistencia": 2,
+            "ambicao": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Versátil",
+          "positive_weights": {
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 40,
+      "question": "Qual ambiente mais te atrai?",
+      "options": {
+        "A": {
+          "text": "Biblioteca ou universidade",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Floresta ou montanha",
+          "positive_weights": {
+            "aventura": 2,
+            "espiritualidade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Cidade movimentada",
+          "positive_weights": {
+            "carisma": 2,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Lugar silencioso e isolado",
+          "positive_weights": {
+            "intuicao": 2,
+            "independencia": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 41,
+      "question": "Você encontra um artefato extremamente poderoso. O que faz?",
+      "options": {
+        "A": {
+          "text": "Estuda seu funcionamento",
+          "positive_weights": {
+            "conhecimento": 2,
+            "sabedoria": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Usa imediatamente",
+          "positive_weights": {
+            "coragem": 2,
+            "aventura": 1
+          },
+          "negative_weights": {
+            "autocontrole": -1
+          }
+        },
+        "C": {
+          "text": "Protege para que ninguém abuse dele",
+          "positive_weights": {
+            "justica": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Esconde até entender os riscos",
+          "positive_weights": {
+            "autocontrole": 2,
+            "intuicao": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 42,
+      "question": "Um monstro ameaça sua cidade. Você:",
+      "options": {
+        "A": {
+          "text": "Lidera a defesa",
+          "positive_weights": {
+            "lideranca": 3,
+            "coragem": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Busca um plano para derrotá-lo",
+          "positive_weights": {
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Enfrenta sozinho",
+          "positive_weights": {
+            "coragem": 3,
+            "independencia": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Reúne aliados especializados",
+          "positive_weights": {
+            "adaptabilidade": 2,
+            "lideranca": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 43,
+      "question": "Qual seria sua arma ideal?",
+      "options": {
+        "A": {
+          "text": "Espada",
+          "positive_weights": {
+            "coragem": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Arco",
+          "positive_weights": {
+            "autocontrole": 2,
+            "disciplina": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Magia ou artefatos",
+          "positive_weights": {
+            "espiritualidade": 2,
+            "criatividade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Qualquer coisa disponível",
+          "positive_weights": {
+            "adaptabilidade": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 44,
+      "question": "Seu maior aliado em uma missão seria:",
+      "options": {
+        "A": {
+          "text": "Um estrategista",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Um guerreiro",
+          "positive_weights": {
+            "coragem": 2,
+            "persistencia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Um explorador",
+          "positive_weights": {
+            "aventura": 2,
+            "adaptabilidade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Um curandeiro",
+          "positive_weights": {
+            "empatia": 2,
+            "lealdade": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 45,
+      "question": "Qual seria sua principal função em uma profecia?",
+      "options": {
+        "A": {
+          "text": "Interpretar os sinais",
+          "positive_weights": {
+            "intuicao": 2,
+            "espiritualidade": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Liderar os heróis",
+          "positive_weights": {
+            "lideranca": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Resolver enigmas",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Executar a missão",
+          "positive_weights": {
+            "persistencia": 2,
+            "coragem": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 46,
+      "question": "Ao encontrar uma criatura desconhecida:",
+      "options": {
+        "A": {
+          "text": "Tenta conversar",
+          "positive_weights": {
+            "empatia": 2,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Observa primeiro",
+          "positive_weights": {
+            "sabedoria": 2,
+            "autocontrole": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Analisa seus poderes",
+          "positive_weights": {
+            "conhecimento": 2,
+            "criatividade": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Segue seus instintos",
+          "positive_weights": {
+            "intuicao": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 47,
+      "question": "O Olimpo oferece um presente. Você escolhe:",
+      "options": {
+        "A": {
+          "text": "Conhecimento infinito",
+          "positive_weights": {
+            "conhecimento": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Poder extraordinário",
+          "positive_weights": {
+            "ambicao": 3,
+            "competitividade": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Liberdade absoluta",
+          "positive_weights": {
+            "independencia": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Proteger quem ama",
+          "positive_weights": {
+            "lealdade": 2,
+            "empatia": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 48,
+      "question": "Qual destes desafios parece mais interessante?",
+      "options": {
+        "A": {
+          "text": "Resolver um mistério antigo",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 2
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Vencer um torneio",
+          "positive_weights": {
+            "competitividade": 3,
+            "coragem": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Explorar uma terra desconhecida",
+          "positive_weights": {
+            "aventura": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Negociar a paz entre rivais",
+          "positive_weights": {
+            "justica": 2,
+            "carisma": 1
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 49,
+      "question": "O que mais define um herói?",
+      "options": {
+        "A": {
+          "text": "Coragem",
+          "positive_weights": {
+            "coragem": 3
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Sacrifício",
+          "positive_weights": {
+            "lealdade": 2,
+            "empatia": 1
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Sabedoria",
+          "positive_weights": {
+            "sabedoria": 3
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Persistência",
+          "positive_weights": {
+            "persistencia": 3
+          },
+          "negative_weights": {}
+        }
+      }
+    },
+    {
+      "id": 50,
+      "question": "Ao final de sua jornada, o que gostaria que lembrassem sobre você?",
+      "options": {
+        "A": {
+          "text": "Sua inteligência",
+          "positive_weights": {
+            "sabedoria": 2,
+            "conhecimento": 1
+          },
+          "negative_weights": {}
+        },
+        "B": {
+          "text": "Sua bravura",
+          "positive_weights": {
+            "coragem": 3
+          },
+          "negative_weights": {}
+        },
+        "C": {
+          "text": "Seu impacto nas pessoas",
+          "positive_weights": {
+            "empatia": 2,
+            "lideranca": 1
+          },
+          "negative_weights": {}
+        },
+        "D": {
+          "text": "Seu legado",
+          "positive_weights": {
+            "ambicao": 1,
+            "persistencia": 2
+          },
+          "negative_weights": {}
+        }
+      }
+    }
+  ]
+}

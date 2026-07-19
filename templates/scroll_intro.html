@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>O Chamado do Olimpo</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="scroll-intro">
+
+    <img
+        src="{{ url_for('static', filename='img/olympo_logo.png') }}"
+        class="intro-logo"
+        alt="Olympo">
+
+    <div class="scroll-stage">
+
+        <img
+            src="{{ url_for('static', filename='img/pergaminho_aberto.png') }}"
+            class="scroll-paper"
+            alt="Pergaminho">
+
+        <div class="scroll-content">
+            <h1>Filho do Olimpo</h1>
+
+            <p>
+                Os deuses aguardam suas respostas.<br>           
+                Apenas através delas será possível descobrir
+                sua verdadeira afinidade divina.
+            </p>
+
+            <a href="/quiz">
+            <img
+            src="{{ url_for('static', filename='img/meu_botao.png') }}"
+            class="btn-pergaminho"
+           alt="Iniciar Jornada"
+            >
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const particles = document.createElement("div");
+particles.id = "particles";
+document.body.appendChild(particles);
+
+for(let i = 0; i < 40; i++){
+
+    const p = document.createElement("div");
+
+    p.style.position = "fixed";
+    p.style.width = "3px";
+    p.style.height = "3px";
+
+    p.style.borderRadius = "50%";
+
+    p.style.background = "#d8b26e";
+
+    p.style.boxShadow =
+        "0 0 10px #d8b26e";
+
+    p.style.left =
+        Math.random() * window.innerWidth + "px";
+
+    p.style.top =
+        Math.random() * window.innerHeight + "px";
+
+    p.style.pointerEvents = "none";
+
+    p.style.zIndex = "999";
+
+    p.animate(
+        [
+            { transform: "translateY(0px)", opacity: 0 },
+            { opacity: 1 },
+            { transform: "translateY(-300px)", opacity: 0 }
+        ],
+        {
+            duration: 4000 + Math.random()*5000,
+            iterations: Infinity
+        }
+    );
+
+    particles.appendChild(p);
+}
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Olympo</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="quiz-page-body">
+
+<div id="particles"></div>
+
+<div class="quiz-container">
+
+    <h1 class="quiz-title">Julgamento do Olimpo</h1>
+
+    {% set questions_per_page = 5 %}
+    {% set pages = questions|batch(questions_per_page)|list %}
+
+    <form method="POST" action="/result" id="quizForm">
+
+        {% for page in pages %}
+
+            {% set progress = (loop.index / pages|length) * 100 %}
+            {% set first_q = (loop.index0 * questions_per_page) + 1 %}
+            {% set last_q = first_q + page|length - 1 %}
+
+            <div class="quiz-page {% if loop.first %}active{% endif %}" data-page="{{ loop.index }}">
+
+                <div class="quiz-progress-text">
+                    Página {{ loop.index }} de {{ pages|length }}
+                    <span class="quiz-progress-sub">(perguntas {{ first_q }}–{{ last_q }} de {{ questions|length }})</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: {{ progress }}%;"></div>
+                </div>
+
+                {% for question in page %}
+
+                    <div class="question-card">
+
+                        <h2 class="likert-statement">{{ question.statement }}</h2>
+
+                        <div class="likert-scale">
+
+                            <span class="likert-endpoint likert-endpoint-left">Concordo</span>
+
+                            <div class="likert-options">
+                                {% for value in range(1, 8) %}
+                                    <label class="likert-option">
+                                        <input
+                                            type="radio"
+                                            name="q{{ question.id }}"
+                                            value="{{ value }}"
+                                            required>
+                                        <span class="likert-circle likert-circle-{{ value }}"></span>
+                                    </label>
+                                {% endfor %}
+                            </div>
+
+                            <span class="likert-endpoint likert-endpoint-right">Discordo</span>
+
+                        </div>
+
+                    </div>
+
+                {% endfor %}
+
+                <div class="quiz-nav">
+
+                    {% if not loop.first %}
+                        <img
+                            src="{{ url_for('static', filename='img/btn_voltar.png') }}"
+                            class="quiz-img-btn prev-btn"
+                            alt="Voltar">
+                    {% endif %}
+
+                    {% if not loop.last %}
+                        <img
+                            src="{{ url_for('static', filename='img/btn_proxima.png') }}"
+                            class="quiz-img-btn next-btn"
+                            alt="Próxima">
+                    {% else %}
+                        <img
+                            src="{{ url_for('static', filename='img/btn_revelar.png') }}"
+                            class="quiz-img-btn finish-btn"
+                            alt="Revelar Divindade">
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    </form>
+
+</div>
+
+<script>
+const pages = document.querySelectorAll(".quiz-page");
+const nextButtons = document.querySelectorAll(".next-btn");
+const prevButtons = document.querySelectorAll(".prev-btn");
+
+let currentPage = 0;
+
+function showPage(index) {
+    pages.forEach((page, i) => {
+        page.classList.toggle("active", i === index);
+    });
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+// retorna true se todas as perguntas da página tiverem uma resposta marcada
+function pageIsComplete(page) {
+    const groups = new Set(
+        Array.from(page.querySelectorAll("input[type='radio']"))
+            .map(input => input.name)
+    );
+
+    for (const name of groups) {
+        const checked = page.querySelector(`input[name="${name}"]:checked`);
+        if (!checked) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function shakePage(page) {
+    page.classList.add("shake");
+    setTimeout(() => {
+        page.classList.remove("shake");
+    }, 400);
+}
+
+nextButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const current = pages[currentPage];
+
+        if (!pageIsComplete(current)) {
+            shakePage(current);
+            return;
+        }
+
+        currentPage++;
+        showPage(currentPage);
+    });
+});
+
+prevButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        currentPage--;
+        showPage(currentPage);
+    });
+});
+
+const finishButton = document.querySelector(".finish-btn");
+const quizForm = document.getElementById("quizForm");
+
+finishButton.addEventListener("click", () => {
+    const current = pages[currentPage];
+
+    if (!pageIsComplete(current)) {
+        shakePage(current);
+        return;
+    }
+
+    quizForm.submit();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olympo</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+
+        .landing {
+
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+        .landing h1 {
+
+            font-size: 5rem;
+
+            margin-bottom: 15px;
+
+            color: #d9b46b;
+
+            text-shadow:
+                0 0 15px rgba(217,180,107,0.8),
+                0 0 35px rgba(217,180,107,0.4);
+        }
+
+        .landing p {
+
+            font-size: 1.4rem;
+
+            max-width: 700px;
+
+            margin-bottom: 40px;
+
+            color: #f4e8c1;
+        }
+
+        .start-btn {
+
+            padding: 18px 45px;
+
+            font-size: 1.2rem;
+
+            border-radius: 12px;
+
+            text-decoration: none;
+        }
+
+        .subtitle {
+
+            margin-top: 25px;
+
+            font-size: 0.95rem;
+
+            opacity: 0.8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="landing">
+
+    <img
+        src="{{ url_for('static', filename='img/olympo_logo.png') }}"
+        class="logo-olympo"
+        alt="Olympo">
+
+    <p class="subtitle">
+        Descubra qual divindade grega possui maior afinidade com sua personalidade
+    </p>
+
+    <div class="scroll-start">
+
+    <a href="/intro">
+
+        <img
+            src="{{ url_for('static', filename='img/pergaminho_fechado.png') }}"
+            alt="Iniciar Teste"
+            class="scroll-closed">
+
+    </a>
+
+</div>
+
+</div>
+
+<script>
+
+const particles = document.createElement("div");
+particles.id = "particles";
+document.body.appendChild(particles);
+
+for(let i = 0; i < 40; i++){
+
+    const p = document.createElement("div");
+
+    p.style.position = "fixed";
+    p.style.width = "3px";
+    p.style.height = "3px";
+
+    p.style.borderRadius = "50%";
+
+    p.style.background = "#d8b26e";
+
+    p.style.boxShadow =
+        "0 0 10px #d8b26e";
+
+    p.style.left =
+        Math.random() * window.innerWidth + "px";
+
+    p.style.top =
+        Math.random() * window.innerHeight + "px";
+
+    p.style.pointerEvents = "none";
+
+    p.style.zIndex = "999";
+
+    p.animate(
+        [
+            { transform: "translateY(0px)", opacity: 0 },
+            { opacity: 1 },
+            { transform: "translateY(-300px)", opacity: 0 }
+        ],
+        {
+            duration: 4000 + Math.random()*5000,
+            iterations: Infinity
+        }
+    );
+
+    particles.appendChild(p);
+}
+
+</script>
+</body>
+
+</html>

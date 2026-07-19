@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado Olympo</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="result-page">
+
+<div id="particles"></div>
+
+<div class="result-container">
+
+    <h1 class="result-title">Revelação do Olimpo</h1>
+
+    <div class="divine-card main-result">
+
+        <h2>Divindade Principal</h2>
+
+        <div class="god-name">
+            {{ explanation.primary_god }}
+        </div>
+
+        <div class="god-percent">
+            {{ explanation.primary_percentage }}%
+        </div>
+
+        <img
+        src="{{ url_for('static', filename='img/portraits/' ~ explanation.primary_god|lower ~ '.png') }}"
+        class="god-portrait"
+        alt="{{ explanation.primary_god }}">
+
+        <p class="god-title">
+            {{ explanation.primary_title }}
+        </p>
+
+        <p class="god-description">
+            {{ explanation.primary_description }}
+        </p>
+
+    </div>
+
+    {% if explanation.primary_mythology %}
+    <div class="divine-card lore-card">
+        <h2>Mitologia</h2>
+        <p class="god-lore">
+            {{ explanation.primary_mythology }}
+        </p>
+    </div>
+    {% endif %}
+
+    {% if explanation.primary_strengths or explanation.primary_challenges %}
+    <div class="result-grid result-grid-2">
+
+        {% if explanation.primary_strengths %}
+        <div class="divine-card strengths-card">
+            <h2>Pontos Fortes</h2>
+            <ul class="trait-list trait-list-positive">
+                {% for item in explanation.primary_strengths %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if explanation.primary_challenges %}
+        <div class="divine-card challenges-card">
+            <h2>Desafios</h2>
+            <ul class="trait-list trait-list-negative">
+                {% for item in explanation.primary_challenges %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+    <div class="result-grid result-grid-3">
+
+        <div class="divine-card god-symbol-card">
+            <h2>Brasão</h2>
+
+            <img
+                src="{{ url_for('static', filename='img/gods/' ~ explanation.primary_god|lower ~ '.png') }}"
+                class="god-symbol"
+                alt="{{ explanation.primary_god }}">
+        </div>
+
+        <div class="divine-card">
+            <h2>Traços Dominantes</h2>
+
+            <div class="traits result-traits">
+                {% for trait in explanation.top_traits %}
+                    <span class="trait">{{ trait }}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="divine-card">
+            <h2>Top 3 Divindades</h2>
+
+            {% for item in ranking[:3] %}
+                <div class="mini-top-card">
+                    <strong>{{ loop.index }}º {{ item.god }}</strong>
+                    <span>{{ item.percentage }}%</span>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div class="divine-card secondary-card">
+        <h2>Influência Secundária</h2>
+        <p class="secondary-intro">
+            Além de {{ explanation.primary_god }}, uma parte importante de quem
+            você é carrega a essência de <strong>{{ explanation.secondary_god }}</strong>,
+            {{ explanation.secondary_title|lower }}
+            ({{ explanation.secondary_percentage }}% de afinidade).
+        </p>
+        <p class="god-description">
+            {{ explanation.secondary_description }}
+        </p>
+    </div>
+
+    <div class="result-actions">
+
+    <img
+        src="{{ url_for('static', filename='img/btn_ranking.png') }}"
+        class="result-img-btn"
+        onclick="toggleRanking()"
+        alt="Mostrar Ranking">
+
+    <a href="/quiz">
+        <img
+            src="{{ url_for('static', filename='img/btn_refazer.png') }}"
+            class="result-img-btn"
+            alt="Refazer Teste">
+    </a>
+
+    </div>
+
+    <div id="rankingCompleto" class="divine-card ranking-hidden">
+
+    <h2>Ranking Completo</h2>
+
+    <ol start="4" class="ranking">
+        {% for item in ranking[3:] %}
+            <li>
+                {{ item.god }} — {{ item.percentage }}%
+            </li>
+        {% endfor %}
+    </ol>
+
+    </div>
+
+</div>
+
+<script>
+function toggleRanking() {
+    const ranking = document.getElementById("rankingCompleto");
+
+    ranking.classList.toggle("show-ranking");
+}
+</script>
+
+</body>
+</html>

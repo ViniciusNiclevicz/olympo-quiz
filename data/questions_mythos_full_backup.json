@@ -1,0 +1,998 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "statement": "Antes de entrar em uma batalha, você prefere estudar o terreno e o inimigo, como Atena faria, em vez de atacar por impulso.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": 1.0,
+        "autocontrole": 0.2
+      }
+    },
+    {
+      "id": 2,
+      "statement": "Numa encruzilhada dentro de um labirinto, você é do tipo que para para pensar no enigma antes de escolher um caminho.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": 1.0
+      }
+    },
+    {
+      "id": 3,
+      "statement": "As pessoas do acampamento costumam vir até você pedir conselho antes de tomar decisões importantes.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": 1.0,
+        "carisma": 0.2
+      }
+    },
+    {
+      "id": 4,
+      "statement": "Você prefere consultar um oráculo ou estudar profecias antigas a confiar apenas no instinto.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": 1.0,
+        "conhecimento": 0.2
+      }
+    },
+    {
+      "id": 5,
+      "statement": "Você entraria em uma caverna desconhecida sem pensar duas vezes sobre o que pode estar lá dentro.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": -1.0,
+        "aventura": 0.2
+      }
+    },
+    {
+      "id": 6,
+      "statement": "Diante de um monstro, seu primeiro impulso é atacar, não analisar os pontos fracos dele.",
+      "primary_trait": "sabedoria",
+      "weights": {
+        "sabedoria": -1.0
+      }
+    },
+    {
+      "id": 7,
+      "statement": "Você inventaria uma solução nova para escapar de uma armadilha, em vez de usar só a força bruta.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": 1.0
+      }
+    },
+    {
+      "id": 8,
+      "statement": "Construir armas, artefatos ou disfarces engenhosos para enganar um monstro soa divertido para você.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": 1.0
+      }
+    },
+    {
+      "id": 9,
+      "statement": "Você prefere criar sua própria estratégia em uma missão a seguir um plano já pronto.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": 1.0,
+        "independencia": 0.2
+      }
+    },
+    {
+      "id": 10,
+      "statement": "Reinventar um mito antigo com um final diferente é algo que te empolga.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": 1.0,
+        "expressividade": 0.2
+      }
+    },
+    {
+      "id": 11,
+      "statement": "Você prefere seguir as instruções de uma profecia à risca, sem tentar mudar o rumo dela.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": -1.0
+      }
+    },
+    {
+      "id": 12,
+      "statement": "Diante de um problema em uma missão, você busca a solução mais tradicional, não a mais original.",
+      "primary_trait": "criatividade",
+      "weights": {
+        "criatividade": -1.0
+      }
+    },
+    {
+      "id": 13,
+      "statement": "Você se voluntariaria para enfrentar uma quimera sozinho(a) se isso salvasse seus amigos.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": 1.0
+      }
+    },
+    {
+      "id": 14,
+      "statement": "Descer ao submundo para resgatar alguém não te assusta tanto quanto deveria.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": 1.0,
+        "aventura": 0.2
+      }
+    },
+    {
+      "id": 15,
+      "statement": "Você encara um titã ou monstro de frente, mesmo sabendo que pode perder.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": 1.0
+      }
+    },
+    {
+      "id": 16,
+      "statement": "Defender um amigo da fúria de um deus, mesmo sendo arriscado, é algo que você faria sem pestanejar.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": 1.0,
+        "lealdade": 0.2
+      }
+    },
+    {
+      "id": 17,
+      "statement": "Você prefere fugir de uma criatura perigosa a arriscar uma luta que pode não vencer.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": -1.0
+      }
+    },
+    {
+      "id": 18,
+      "statement": "Diante de um perigo real em uma missão, seu primeiro instinto é recuar e buscar ajuda.",
+      "primary_trait": "coragem",
+      "weights": {
+        "coragem": -1.0
+      }
+    },
+    {
+      "id": 19,
+      "statement": "Em um jogo de captura a bandeira entre cabanas, vencer é tudo que importa para você.",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": 1.0
+      }
+    },
+    {
+      "id": 20,
+      "statement": "Você se compara com outros semideuses para saber se está evoluindo mais rápido que eles.",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": 1.0,
+        "ambicao": 0.2
+      }
+    },
+    {
+      "id": 21,
+      "statement": "Perder uma disputa contra outra cabana, mesmo brincando, incomoda de verdade.",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": 1.0
+      }
+    },
+    {
+      "id": 22,
+      "statement": "Ser reconhecido(a) como o(a) melhor guerreiro(a) do acampamento é algo que te motiva.",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": 1.0,
+        "ambicao": 0.2
+      }
+    },
+    {
+      "id": 23,
+      "statement": "Você prefere que todas as cabanas cheguem juntas em uma prova, sem se importar quem vence.",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": -1.0
+      }
+    },
+    {
+      "id": 24,
+      "statement": "Treinar em equipe é mais importante para você do que provar que é o melhor sozinho(a).",
+      "primary_trait": "competitividade",
+      "weights": {
+        "competitividade": -1.0
+      }
+    },
+    {
+      "id": 25,
+      "statement": "Você percebe quando um amigo semideus está escondendo que uma profecia o assusta.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": 1.0
+      }
+    },
+    {
+      "id": 26,
+      "statement": "Ver uma criatura que já foi humana sofrer mexe com você, mesmo sabendo que ela é perigosa.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": 1.0
+      }
+    },
+    {
+      "id": 27,
+      "statement": "Você cuidaria de um animal ou criatura mítica ferida, mesmo sendo perigosa, só para ajudá-la.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": 1.0
+      }
+    },
+    {
+      "id": 28,
+      "statement": "Colocar-se no lugar de um semideus rejeitado pelo pai ou mãe divino(a) é algo natural para você.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": 1.0,
+        "espiritualidade": 0.2
+      }
+    },
+    {
+      "id": 29,
+      "statement": "Você foca na missão e não se distrai com o sofrimento alheio no caminho.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": -1.0
+      }
+    },
+    {
+      "id": 30,
+      "statement": "Você tem dificuldade em entender por que um amigo está chateado se isso não afeta a missão.",
+      "primary_trait": "empatia",
+      "weights": {
+        "empatia": -1.0
+      }
+    },
+    {
+      "id": 31,
+      "statement": "Em uma missão em grupo, é natural que os outros semideuses esperem que você dê as ordens.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": 1.0
+      }
+    },
+    {
+      "id": 32,
+      "statement": "Você se sente confortável dividindo tarefas entre seus companheiros de cabana antes de uma batalha.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": 1.0,
+        "disciplina": 0.2
+      }
+    },
+    {
+      "id": 33,
+      "statement": "Ser escolhido(a) para liderar uma missão não te assusta, te motiva.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": 1.0,
+        "carisma": 0.2
+      }
+    },
+    {
+      "id": 34,
+      "statement": "Você organiza o grupo em um jogo de captura a bandeira sem que ninguém precise pedir.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": 1.0
+      }
+    },
+    {
+      "id": 35,
+      "statement": "Você prefere seguir as ordens de outro semideus a comandar a missão.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": -1.0
+      }
+    },
+    {
+      "id": 36,
+      "statement": "Tomar decisões pelo grupo todo é um peso que você prefere não carregar.",
+      "primary_trait": "lideranca",
+      "weights": {
+        "lideranca": -1.0
+      }
+    },
+    {
+      "id": 37,
+      "statement": "Mesmo sentindo uma fúria repentina em batalha, você consegue segurar o impulso de atacar primeiro.",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": 1.0
+      }
+    },
+    {
+      "id": 38,
+      "statement": "Diante de um canto tentador de uma criatura mítica, você mantém o foco na missão.",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": 1.0
+      }
+    },
+    {
+      "id": 39,
+      "statement": "Você pensa duas vezes antes de provocar um deus, mesmo estando irritado(a).",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": 1.0,
+        "sabedoria": 0.2
+      }
+    },
+    {
+      "id": 40,
+      "statement": "Em uma emboscada, você consegue manter a calma para pensar em um plano em vez de entrar em pânico.",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": 1.0
+      }
+    },
+    {
+      "id": 41,
+      "statement": "Quando alguém desrespeita sua família, é difícil segurar sua raiva.",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": -1.0
+      }
+    },
+    {
+      "id": 42,
+      "statement": "Você age pelo calor do momento em uma luta, mais do que pela razão.",
+      "primary_trait": "autocontrole",
+      "weights": {
+        "autocontrole": -1.0
+      }
+    },
+    {
+      "id": 43,
+      "statement": "Você sonha em ser lembrado(a) como um grande herói, com histórias contadas sobre você no futuro.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": 1.0
+      }
+    },
+    {
+      "id": 44,
+      "statement": "Subir de posto entre os semideuses do acampamento é algo que você busca ativamente.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": 1.0,
+        "competitividade": 0.2
+      }
+    },
+    {
+      "id": 45,
+      "statement": "Você já tem um grande objetivo de longo prazo, como se tornar uma lenda entre os semideuses.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": 1.0,
+        "disciplina": 0.2
+      }
+    },
+    {
+      "id": 46,
+      "statement": "Ficar parado(a) em uma cabana sem cumprir nenhuma missão importante te incomoda.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": 1.0,
+        "persistencia": 0.2
+      }
+    },
+    {
+      "id": 47,
+      "statement": "Você está satisfeito(a) com uma vida tranquila no acampamento, sem grandes glórias.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": -1.0
+      }
+    },
+    {
+      "id": 48,
+      "statement": "Fama e reconhecimento não são coisas que você busca de verdade.",
+      "primary_trait": "ambicao",
+      "weights": {
+        "ambicao": -1.0
+      }
+    },
+    {
+      "id": 49,
+      "statement": "A ideia de embarcar em um navio rumo ao desconhecido te empolga mais do que assusta.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": 1.0
+      }
+    },
+    {
+      "id": 50,
+      "statement": "Explorar um labirinto nunca antes mapeado soa divertido, não aterrorizante.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": 1.0
+      }
+    },
+    {
+      "id": 51,
+      "statement": "Você se voluntariaria para uma missão em terras desconhecidas sem pensar duas vezes.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": 1.0,
+        "coragem": 0.2
+      }
+    },
+    {
+      "id": 52,
+      "statement": "Uma profecia incerta e perigosa te atrai mais do que uma tarefa segura e previsível.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": 1.0,
+        "adaptabilidade": 0.2
+      }
+    },
+    {
+      "id": 53,
+      "statement": "Você prefere ficar treinando no acampamento a sair em uma missão de resultado incerto.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": -1.0
+      }
+    },
+    {
+      "id": 54,
+      "statement": "Rotina e segurança dentro do acampamento te agradam mais que o desconhecido lá fora.",
+      "primary_trait": "aventura",
+      "weights": {
+        "aventura": -1.0
+      }
+    },
+    {
+      "id": 55,
+      "statement": "Passar horas em uma biblioteca estudando sobre monstros antigos soa ótimo para você.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": 1.0
+      }
+    },
+    {
+      "id": 56,
+      "statement": "Você quer entender a fundo a mitologia por trás de cada criatura antes de enfrentá-la.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": 1.0,
+        "sabedoria": 0.2
+      }
+    },
+    {
+      "id": 57,
+      "statement": "Aprender grego antigo ou latim só por curiosidade é algo que você faria.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": 1.0
+      }
+    },
+    {
+      "id": 58,
+      "statement": "Descobrir como funciona a magia por trás de um artefato divino te fascina mais do que usá-lo.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": 1.0
+      }
+    },
+    {
+      "id": 59,
+      "statement": "Você prefere ir direto para a ação a estudar sobre o monstro antes de enfrentá-lo.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": -1.0
+      }
+    },
+    {
+      "id": 60,
+      "statement": "Aulas teóricas sobre mitologia antiga não prendem sua atenção.",
+      "primary_trait": "conhecimento",
+      "weights": {
+        "conhecimento": -1.0
+      }
+    },
+    {
+      "id": 61,
+      "statement": "Você defenderia seus companheiros de cabana mesmo contra a ordem direta de um deus.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": 1.0,
+        "coragem": 0.2
+      }
+    },
+    {
+      "id": 62,
+      "statement": "Uma vez que jura lealdade a um amigo semideus, nada muda isso, nem interferência divina.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": 1.0
+      }
+    },
+    {
+      "id": 63,
+      "statement": "Você voltaria a uma missão perigosa só para não abandonar um amigo para trás.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": 1.0
+      }
+    },
+    {
+      "id": 64,
+      "statement": "Trair a confiança do seu grupo em uma missão é algo que você jamais faria, custe o que custar.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": 1.0,
+        "justica": 0.2
+      }
+    },
+    {
+      "id": 65,
+      "statement": "Você trocaria de aliados em uma missão se isso aumentasse suas chances de sucesso.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": -1.0
+      }
+    },
+    {
+      "id": 66,
+      "statement": "Vínculos formados em uma missão não costumam durar muito depois que ela termina, para você.",
+      "primary_trait": "lealdade",
+      "weights": {
+        "lealdade": -1.0
+      }
+    },
+    {
+      "id": 67,
+      "statement": "Você prefere enfrentar uma missão sozinho(a) a depender de um grupo inteiro de semideuses.",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": 1.0
+      }
+    },
+    {
+      "id": 68,
+      "statement": "Ser filho(a) de uma divindade menos famosa não te incomoda, você traça seu próprio caminho.",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": 1.0,
+        "aventura": 0.2
+      }
+    },
+    {
+      "id": 69,
+      "statement": "Você toma decisões em uma missão sem esperar aprovação do resto do grupo.",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": 1.0
+      }
+    },
+    {
+      "id": 70,
+      "statement": "Depender da ajuda direta de um deus do Olimpo incomoda seu orgulho.",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": 1.0
+      }
+    },
+    {
+      "id": 71,
+      "statement": "Você se sente mais seguro(a) fazendo parte de um grupo grande de semideuses do que agindo sozinho(a).",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": -1.0
+      }
+    },
+    {
+      "id": 72,
+      "statement": "Antes de agir em uma missão, você prefere ouvir a opinião de todo o grupo.",
+      "primary_trait": "independencia",
+      "weights": {
+        "independencia": -1.0
+      }
+    },
+    {
+      "id": 73,
+      "statement": "Ver um deus tratando um semideus com injustiça te incomoda, mesmo que não seja da sua cabana.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": 1.0
+      }
+    },
+    {
+      "id": 74,
+      "statement": "Você confrontaria um titã ou deus poderoso se ele estivesse cometendo uma injustiça clara.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": 1.0,
+        "coragem": 0.2
+      }
+    },
+    {
+      "id": 75,
+      "statement": "Tratar todos os semideuses da mesma forma, independente de quem é seu pai ou mãe divino(a), é importante para você.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": 1.0
+      }
+    },
+    {
+      "id": 76,
+      "statement": "Você denunciaria um colega de cabana trapaceando em uma competição, mesmo sendo amigo.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": 1.0
+      }
+    },
+    {
+      "id": 77,
+      "statement": "Às vezes vencer a missão importa mais para você do que seguir as regras à risca.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": -1.0
+      }
+    },
+    {
+      "id": 78,
+      "statement": "Ignorar uma pequena injustiça é mais fácil do que se meter em uma confusão entre deuses.",
+      "primary_trait": "justica",
+      "weights": {
+        "justica": -1.0
+      }
+    },
+    {
+      "id": 79,
+      "statement": "Você sente uma conexão forte com seu pai ou mãe divino(a), mesmo sem nunca tê-lo(a) visto de perto.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": 1.0
+      }
+    },
+    {
+      "id": 80,
+      "statement": "Visitar um oráculo para ouvir uma profecia sobre seu destino te atrai.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": 1.0,
+        "intuicao": 0.2
+      }
+    },
+    {
+      "id": 81,
+      "statement": "Você acredita que os deuses têm um propósito maior guiando as missões dos semideuses.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": 1.0
+      }
+    },
+    {
+      "id": 82,
+      "statement": "Rituais e oferendas aos deuses fazem sentido de verdade para você, não são só tradição.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": 1.0
+      }
+    },
+    {
+      "id": 83,
+      "statement": "Você prefere explicações lógicas a atribuir eventos estranhos à vontade dos deuses.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": -1.0
+      }
+    },
+    {
+      "id": 84,
+      "statement": "Profecias e sinais divinos não te convencem fácil, você confia mais em fatos.",
+      "primary_trait": "espiritualidade",
+      "weights": {
+        "espiritualidade": -1.0
+      }
+    },
+    {
+      "id": 85,
+      "statement": "Você chamaria atenção entre os semideuses assim que chegasse ao acampamento pela primeira vez.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": 1.0
+      }
+    },
+    {
+      "id": 86,
+      "statement": "Fazer aliados rapidamente entre cabanas diferentes é fácil para você.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": 1.0,
+        "expressividade": 0.2
+      }
+    },
+    {
+      "id": 87,
+      "statement": "As pessoas se lembram de você mesmo depois de uma única missão juntos.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": 1.0
+      }
+    },
+    {
+      "id": 88,
+      "statement": "Convencer uma criatura mítica relutante a ajudar na missão costuma ser fácil para você.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": 1.0,
+        "lideranca": 0.2
+      }
+    },
+    {
+      "id": 89,
+      "statement": "Você se sente desconfortável sendo o centro das atenções em uma reunião do acampamento.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": -1.0
+      }
+    },
+    {
+      "id": 90,
+      "statement": "Você passa despercebido(a) mesmo em meio a um grupo grande de semideuses.",
+      "primary_trait": "carisma",
+      "weights": {
+        "carisma": -1.0
+      }
+    },
+    {
+      "id": 91,
+      "statement": "Você segue o treinamento da sua cabana à risca, mesmo quando ninguém está checando.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": 1.0
+      }
+    },
+    {
+      "id": 92,
+      "statement": "Cumprir os prazos de uma missão importante é levado muito a sério por você.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": 1.0,
+        "persistencia": 0.2
+      }
+    },
+    {
+      "id": 93,
+      "statement": "Você organiza sua rotina de treino no acampamento com antecedência e não abre mão dela.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": 1.0
+      }
+    },
+    {
+      "id": 94,
+      "statement": "Manter uma prática constante de combate, mesmo sem monstro à vista, não é difícil para você.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": 1.0
+      }
+    },
+    {
+      "id": 95,
+      "statement": "Você tem dificuldade em seguir uma rotina de treino rígida no acampamento.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": -1.0
+      }
+    },
+    {
+      "id": 96,
+      "statement": "Você deixa o treino para depois quando não tem uma missão urgente.",
+      "primary_trait": "disciplina",
+      "weights": {
+        "disciplina": -1.0
+      }
+    },
+    {
+      "id": 97,
+      "statement": "Se uma missão muda de rumo do nada, você se ajusta rápido, sem travar.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": 1.0
+      }
+    },
+    {
+      "id": 98,
+      "statement": "Você improvisa bem quando o plano da missão desmorona no meio do caminho.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": 1.0,
+        "criatividade": 0.2
+      }
+    },
+    {
+      "id": 99,
+      "statement": "Se ajustar a regras e costumes de um território diferente do seu não é difícil para você.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": 1.0
+      }
+    },
+    {
+      "id": 100,
+      "statement": "Quando um monstro aparece fora do esperado, você reage bem, sem entrar em pânico.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": 1.0
+      }
+    },
+    {
+      "id": 101,
+      "statement": "Mudanças de última hora em uma missão te desestabilizam bastante.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": -1.0
+      }
+    },
+    {
+      "id": 102,
+      "statement": "Você prefere missões previsíveis a ter que reinventar o plano no meio do caminho.",
+      "primary_trait": "adaptabilidade",
+      "weights": {
+        "adaptabilidade": -1.0
+      }
+    },
+    {
+      "id": 103,
+      "statement": "Mesmo depois de falhar em derrotar um monstro, você volta para tentar de novo.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": 1.0
+      }
+    },
+    {
+      "id": 104,
+      "statement": "Você termina uma missão até o fim, mesmo quando o cansaço bate antes da hora.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": 1.0,
+        "disciplina": 0.2
+      }
+    },
+    {
+      "id": 105,
+      "statement": "Encarar um treinamento difícil repetidas vezes não te faz desistir.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": 1.0
+      }
+    },
+    {
+      "id": 106,
+      "statement": "Falhar em uma provação não muda sua determinação de tentar de outro jeito.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": 1.0,
+        "adaptabilidade": 0.2
+      }
+    },
+    {
+      "id": 107,
+      "statement": "Quando uma missão fica difícil demais, você tende a procurar outra coisa para fazer.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": -1.0
+      }
+    },
+    {
+      "id": 108,
+      "statement": "Você costuma abandonar um treinamento no meio quando fica repetitivo ou cansativo.",
+      "primary_trait": "persistencia",
+      "weights": {
+        "persistencia": -1.0
+      }
+    },
+    {
+      "id": 109,
+      "statement": "Você sente quando um monstro está por perto, antes mesmo de vê-lo ou ouvi-lo.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": 1.0
+      }
+    },
+    {
+      "id": 110,
+      "statement": "Seu instinto sobre quem é confiável ou não entre semideuses costuma acertar.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": 1.0
+      }
+    },
+    {
+      "id": 111,
+      "statement": "Decisões rápidas guiadas por instinto em uma missão costumam dar certo para você.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": 1.0
+      }
+    },
+    {
+      "id": 112,
+      "statement": "Você sente quando uma profecia esconde um significado diferente do óbvio.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": 1.0,
+        "espiritualidade": 0.2
+      }
+    },
+    {
+      "id": 113,
+      "statement": "Você só confia em provas concretas sobre um monstro, não em pressentimentos.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": -1.0
+      }
+    },
+    {
+      "id": 114,
+      "statement": "Palpites e sensações estranhas não mudam suas decisões em uma missão.",
+      "primary_trait": "intuicao",
+      "weights": {
+        "intuicao": -1.0
+      }
+    },
+    {
+      "id": 115,
+      "statement": "Contar a história de uma batalha para outros semideuses ao redor da fogueira vem fácil para você.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": 1.0
+      }
+    },
+    {
+      "id": 116,
+      "statement": "Você não esconde o que sente, mesmo diante de uma divindade intimidadora.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": 1.0
+      }
+    },
+    {
+      "id": 117,
+      "statement": "Falar publicamente em uma reunião do acampamento não te intimida.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": 1.0,
+        "carisma": 0.2
+      }
+    },
+    {
+      "id": 118,
+      "statement": "Compor um poema, canção ou peça sobre uma missão é algo natural para você.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": 1.0,
+        "criatividade": 0.2
+      }
+    },
+    {
+      "id": 119,
+      "statement": "Você prefere guardar para si o que sentiu em uma missão difícil, sem contar aos outros.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": -1.0
+      }
+    },
+    {
+      "id": 120,
+      "statement": "Você mantém a postura contida mesmo depois de uma vitória importante.",
+      "primary_trait": "expressividade",
+      "weights": {
+        "expressividade": -1.0
+      }
+    }
+  ]
+}
