@@ -29,11 +29,11 @@
     },
     {
       "id": 4,
-      "statement": "Antes de entrar em uma batalha, você prefere estudar o terreno e o inimigo com calma, em vez de atacar por impulso",
+      "statement": "Você prefere entender profundamente um problema antes de opinar sobre ele.",
       "primary_trait": "sabedoria",
       "weights": {
         "sabedoria": 1.0,
-        "autocontrole": 0.2
+        "conhecimento": 0.2
       }
     },
     {
@@ -47,11 +47,10 @@
     },
     {
       "id": 6,
-      "statement": "Você entraria em uma caverna desconhecida sem pensar duas vezes sobre o que pode estar lá dentro.",
+      "statement": "Você costuma dar opiniões rápidas sobre assuntos que não conhece bem.",
       "primary_trait": "sabedoria",
       "weights": {
-        "sabedoria": -1.0,
-        "aventura": 0.2
+        "sabedoria": -1.0
       }
     },
     {
@@ -81,10 +80,11 @@
     },
     {
       "id": 10,
-      "statement": "Você inventaria uma solução nova para escapar de uma armadilha, em vez de usar só a força bruta.",
+      "statement": "Improvisar soluções criativas em situações imprevistas é algo natural pra você.",
       "primary_trait": "criatividade",
       "weights": {
-        "criatividade": 1.0
+        "criatividade": 1.0,
+        "adaptabilidade": 0.2
       }
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "id": 12,
-      "statement": "Você prefere seguir as instruções de uma profecia à risca, sem tentar mudar o rumo dela.",
+      "statement": "Você acha mais seguro repetir uma fórmula que já funcionou do que arriscar algo diferente.",
       "primary_trait": "criatividade",
       "weights": {
         "criatividade": -1.0
@@ -131,10 +131,11 @@
     },
     {
       "id": 16,
-      "statement": "Você se voluntariaria para enfrentar uma quimera sozinho(a) se isso salvasse seus amigos.",
+      "statement": "Assumir riscos calculados não te assusta, mesmo quando o resultado é incerto.",
       "primary_trait": "coragem",
       "weights": {
-        "coragem": 1.0
+        "coragem": 1.0,
+        "aventura": 0.2
       }
     },
     {
@@ -147,7 +148,7 @@
     },
     {
       "id": 18,
-      "statement": "Você prefere fugir de uma criatura perigosa a arriscar uma luta que pode não vencer.",
+      "statement": "Você prefere evitar confrontos, mesmo quando sabe que está certo(a).",
       "primary_trait": "coragem",
       "weights": {
         "coragem": -1.0
@@ -181,7 +182,7 @@
     },
     {
       "id": 22,
-      "statement": "Em um jogo de captura a bandeira entre cabanas, vencer é tudo que importa para você.",
+      "statement": "Você se esforça mais quando sabe que está sendo comparado(a) com alguém.",
       "primary_trait": "competitividade",
       "weights": {
         "competitividade": 1.0
@@ -197,7 +198,7 @@
     },
     {
       "id": 24,
-      "statement": "Você prefere que todas as cabanas cheguem juntas em uma prova, sem se importar quem vence.",
+      "statement": "Colaborar é sempre mais interessante pra você do que competir.",
       "primary_trait": "competitividade",
       "weights": {
         "competitividade": -1.0
@@ -231,7 +232,7 @@
     },
     {
       "id": 28,
-      "statement": "Você percebe quando um amigo semideus está escondendo que uma profecia o assusta.",
+      "statement": "Ver alguém sofrendo, mesmo um desconhecido, mexe bastante com você.",
       "primary_trait": "empatia",
       "weights": {
         "empatia": 1.0
@@ -247,7 +248,7 @@
     },
     {
       "id": 30,
-      "statement": "Você foca na missão e não se distrai com o sofrimento alheio no caminho.",
+      "statement": "Você foca mais nos seus próprios sentimentos do que nos dos outros.",
       "primary_trait": "empatia",
       "weights": {
         "empatia": -1.0
@@ -281,10 +282,11 @@
     },
     {
       "id": 34,
-      "statement": "Em uma missão em grupo, é natural que os outros semideuses esperem que você dê as ordens.",
+      "statement": "Organizar pessoas em torno de um objetivo comum é algo que você faz naturalmente.",
       "primary_trait": "lideranca",
       "weights": {
-        "lideranca": 1.0
+        "lideranca": 1.0,
+        "carisma": 0.2
       }
     },
     {
@@ -297,7 +299,7 @@
     },
     {
       "id": 36,
-      "statement": "Você prefere seguir as ordens de outro semideus a comandar a missão.",
+      "statement": "Você prefere executar tarefas a decidir o rumo de um projeto.",
       "primary_trait": "lideranca",
       "weights": {
         "lideranca": -1.0
@@ -330,10 +332,11 @@
     },
     {
       "id": 40,
-      "statement": "Mesmo sentindo uma fúria repentina em batalha, você consegue segurar o impulso de atacar primeiro.",
+      "statement": "Mesmo em crises, você consegue manter os pensamentos organizados.",
       "primary_trait": "autocontrole",
       "weights": {
-        "autocontrole": 1.0
+        "autocontrole": 1.0,
+        "sabedoria": 0.2
       }
     },
     {
@@ -346,7 +349,7 @@
     },
     {
       "id": 42,
-      "statement": "Quando alguém desrespeita sua família, é difícil segurar sua raiva.",
+      "statement": "Suas emoções costumam guiar suas reações mais do que a razão.",
       "primary_trait": "autocontrole",
       "weights": {
         "autocontrole": -1.0
@@ -380,10 +383,11 @@
     },
     {
       "id": 46,
-      "statement": "Você sonha em ser lembrado(a) como um grande herói, com histórias contadas sobre você no futuro.",
+      "statement": "Alcançar reconhecimento ou destaque é algo que te motiva.",
       "primary_trait": "ambicao",
       "weights": {
-        "ambicao": 1.0
+        "ambicao": 1.0,
+        "competitividade": 0.2
       }
     },
     {
@@ -396,7 +400,7 @@
     },
     {
       "id": 48,
-      "statement": "Você está satisfeito(a) com uma vida tranquila no acampamento, sem grandes glórias.",
+      "statement": "Você vive mais o presente do que planeja o futuro.",
       "primary_trait": "ambicao",
       "weights": {
         "ambicao": -1.0
@@ -429,10 +433,11 @@
     },
     {
       "id": 52,
-      "statement": "A ideia de embarcar em um navio rumo ao desconhecido te empolga mais do que assusta.",
+      "statement": "Você toparia uma viagem de última hora sem muito planejamento.",
       "primary_trait": "aventura",
       "weights": {
-        "aventura": 1.0
+        "aventura": 1.0,
+        "adaptabilidade": 0.2
       }
     },
     {
@@ -445,7 +450,7 @@
     },
     {
       "id": 54,
-      "statement": "Você prefere ficar treinando no acampamento a sair em uma missão de resultado incerto.",
+      "statement": "Mudar de cidade, emprego ou rotina do zero soa mais estressante do que empolgante para você.",
       "primary_trait": "aventura",
       "weights": {
         "aventura": -1.0
@@ -478,10 +483,11 @@
     },
     {
       "id": 58,
-      "statement": "Passar horas em uma biblioteca estudando sobre monstros antigos soa ótimo para você.",
+      "statement": "Você gosta de entender como as coisas funcionam por trás dos panos.",
       "primary_trait": "conhecimento",
       "weights": {
-        "conhecimento": 1.0
+        "conhecimento": 1.0,
+        "sabedoria": 0.2
       }
     },
     {
@@ -494,7 +500,7 @@
     },
     {
       "id": 60,
-      "statement": "Você prefere ir direto para a ação a estudar sobre o monstro antes de enfrentá-lo.",
+      "statement": "Você prefere aprender fazendo na prática a estudar sobre um assunto antes de começar.",
       "primary_trait": "conhecimento",
       "weights": {
         "conhecimento": -1.0
@@ -527,11 +533,11 @@
     },
     {
       "id": 64,
-      "statement": "Você defenderia seus companheiros de cabana mesmo contra a ordem direta de um deus.",
+      "statement": "Trair a confiança de alguém próximo é algo que você jamais faria.",
       "primary_trait": "lealdade",
       "weights": {
         "lealdade": 1.0,
-        "coragem": 0.2
+        "justica": 0.2
       }
     },
     {
@@ -544,7 +550,7 @@
     },
     {
       "id": 66,
-      "statement": "Você trocaria de aliados em uma missão se isso aumentasse suas chances de sucesso.",
+      "statement": "Você não se apega muito a relações antigas, prefere seguir em frente.",
       "primary_trait": "lealdade",
       "weights": {
         "lealdade": -1.0
@@ -577,7 +583,7 @@
     },
     {
       "id": 70,
-      "statement": "Você prefere enfrentar uma missão sozinho(a) a depender de um grupo inteiro de semideuses.",
+      "statement": "Depender financeiramente ou emocionalmente de alguém te incomoda.",
       "primary_trait": "independencia",
       "weights": {
         "independencia": 1.0
@@ -593,7 +599,7 @@
     },
     {
       "id": 72,
-      "statement": "Você se sente mais seguro(a) fazendo parte de um grupo grande de semideuses do que agindo sozinho(a).",
+      "statement": "Trabalhar em equipe costuma render resultados melhores pra você do que trabalhar sozinho(a).",
       "primary_trait": "independencia",
       "weights": {
         "independencia": -1.0
@@ -627,7 +633,7 @@
     },
     {
       "id": 76,
-      "statement": "Ver um deus tratando um semideus com injustiça te incomoda, mesmo que não seja da sua cabana.",
+      "statement": "Regras devem valer igualmente para todos, sem exceções, na sua opinião.",
       "primary_trait": "justica",
       "weights": {
         "justica": 1.0
@@ -643,7 +649,7 @@
     },
     {
       "id": 78,
-      "statement": "Às vezes vencer a missão importa mais para você do que seguir as regras à risca.",
+      "statement": "Às vezes é mais fácil fechar os olhos para uma injustiça do que se envolver.",
       "primary_trait": "justica",
       "weights": {
         "justica": -1.0
@@ -676,10 +682,11 @@
     },
     {
       "id": 82,
-      "statement": "Você sente uma conexão forte com seu pai ou mãe divino(a), mesmo sem nunca tê-lo(a) visto de perto.",
+      "statement": "Rituais, meditação ou práticas contemplativas fazem (ou fariam) sentido na sua vida.",
       "primary_trait": "espiritualidade",
       "weights": {
-        "espiritualidade": 1.0
+        "espiritualidade": 1.0,
+        "intuicao": 0.2
       }
     },
     {
@@ -692,7 +699,7 @@
     },
     {
       "id": 84,
-      "statement": "Você prefere explicações lógicas a atribuir eventos estranhos à vontade dos deuses.",
+      "statement": "Você não costuma refletir sobre questões existenciais ou espirituais.",
       "primary_trait": "espiritualidade",
       "weights": {
         "espiritualidade": -1.0
@@ -725,10 +732,11 @@
     },
     {
       "id": 88,
-      "statement": "Você chamaria atenção entre os semideuses assim que chegasse ao acampamento pela primeira vez.",
+      "statement": "Convencer ou influenciar outras pessoas é algo que costuma vir fácil pra você.",
       "primary_trait": "carisma",
       "weights": {
-        "carisma": 1.0
+        "carisma": 1.0,
+        "lideranca": 0.2
       }
     },
     {
@@ -741,7 +749,7 @@
     },
     {
       "id": 90,
-      "statement": "Você se sente desconfortável sendo o centro das atenções em uma reunião do acampamento.",
+      "statement": "Você tende a passar despercebido(a) em ambientes sociais grandes.",
       "primary_trait": "carisma",
       "weights": {
         "carisma": -1.0
@@ -774,10 +782,11 @@
     },
     {
       "id": 94,
-      "statement": "Você segue o treinamento da sua cabana à risca, mesmo quando ninguém está checando.",
+      "statement": "Manter hábitos consistentes ao longo do tempo não é difícil pra você.",
       "primary_trait": "disciplina",
       "weights": {
-        "disciplina": 1.0
+        "disciplina": 1.0,
+        "persistencia": 0.2
       }
     },
     {
@@ -790,7 +799,7 @@
     },
     {
       "id": 96,
-      "statement": "Você tem dificuldade em seguir uma rotina de treino rígida no acampamento.",
+      "statement": "Você costuma deixar tarefas para depois, mesmo sabendo que devia fazê-las.",
       "primary_trait": "disciplina",
       "weights": {
         "disciplina": -1.0
@@ -823,10 +832,11 @@
     },
     {
       "id": 100,
-      "statement": "Se uma missão muda de rumo do nada, você se ajusta rápido, sem travar.",
+      "statement": "Quando um plano falha, você rapidamente traça um novo caminho.",
       "primary_trait": "adaptabilidade",
       "weights": {
-        "adaptabilidade": 1.0
+        "adaptabilidade": 1.0,
+        "criatividade": 0.2
       }
     },
     {
@@ -839,7 +849,7 @@
     },
     {
       "id": 102,
-      "statement": "Mudanças de última hora em uma missão te desestabilizam bastante.",
+      "statement": "Você prefere ambientes estáveis e se incomoda quando tudo muda de uma vez.",
       "primary_trait": "adaptabilidade",
       "weights": {
         "adaptabilidade": -1.0
@@ -872,10 +882,11 @@
     },
     {
       "id": 106,
-      "statement": "Mesmo depois de falhar em derrotar um monstro, você volta para tentar de novo.",
+      "statement": "Falhar não te faz desistir, apenas te faz tentar de outro jeito.",
       "primary_trait": "persistencia",
       "weights": {
-        "persistencia": 1.0
+        "persistencia": 1.0,
+        "adaptabilidade": 0.2
       }
     },
     {
@@ -888,7 +899,7 @@
     },
     {
       "id": 108,
-      "statement": "Quando uma missão fica difícil demais, você tende a procurar outra coisa para fazer.",
+      "statement": "Você costuma abandonar projetos no meio quando surgem dificuldades.",
       "primary_trait": "persistencia",
       "weights": {
         "persistencia": -1.0
@@ -921,7 +932,7 @@
     },
     {
       "id": 112,
-      "statement": "Você sente quando um monstro está por perto, antes mesmo de vê-lo ou ouvi-lo.",
+      "statement": "Decisões rápidas baseadas em instinto costumam dar certo pra você.",
       "primary_trait": "intuicao",
       "weights": {
         "intuicao": 1.0
@@ -937,7 +948,7 @@
     },
     {
       "id": 114,
-      "statement": "Você só confia em provas concretas sobre um monstro, não em pressentimentos.",
+      "statement": "Antes de confiar em uma pessoa nova, você precisa de provas concretas, não apenas de uma boa impressão.",
       "primary_trait": "intuicao",
       "weights": {
         "intuicao": -1.0
@@ -970,10 +981,11 @@
     },
     {
       "id": 118,
-      "statement": "Contar a história de uma batalha para outros semideuses ao redor da fogueira vem fácil para você.",
+      "statement": "Escrever, cantar, atuar ou se apresentar são formas naturais de você se comunicar.",
       "primary_trait": "expressividade",
       "weights": {
-        "expressividade": 1.0
+        "expressividade": 1.0,
+        "criatividade": 0.2
       }
     },
     {
@@ -986,7 +998,7 @@
     },
     {
       "id": 120,
-      "statement": "Você prefere guardar para si o que sentiu em uma missão difícil, sem contar aos outros.",
+      "statement": "Você mantém uma postura mais reservada, sem grandes demonstrações externas.",
       "primary_trait": "expressividade",
       "weights": {
         "expressividade": -1.0
